@@ -145,8 +145,10 @@ const desenhaCores = (props) =>{
 }
 
 const reset = (props)=>{
+if(pontos>record){
     record = pontos
     records.text = `Record: ${record}`
+}
     alternarTelas = false
     person.y = 50
     person.velocidade = 0
